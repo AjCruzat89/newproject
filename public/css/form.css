@@ -1,0 +1,54 @@
+/* <!--===============================================================================================--> */
+.box {
+    border-radius: 15px;
+    min-width: 450px;
+    background: rgba(255, 255, 255, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+@media (max-width:568px) {
+    .box {
+        min-width: 100%;
+        width: 100%;
+    }
+}
+
+.box h1,
+.box label {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+
+.box input {
+    border-radius: 10px;
+    padding: 10px;
+    border: 0px solid transparent;
+}
+
+.box button {
+    border: 1px solid transparent;
+    transition: background 0.5s ease-in, border 0.5s ease-in, -webkit-animation 0.5s ease-in;
+}
+
+.box button:hover {
+    border: 1px solid transparent;
+    -webkit-animation: GradientAnimation 5s ease-in infinite;
+    animation: GradientAnimation 5s ease-in infinite;
+    background: rgba(0, 0, 0, 0) -webkit-gradient(linear, left top, right top, from(#90f3b3), color-stop(#90e9f3), color-stop(#909ff3), color-stop(#cc90f3), color-stop(#f390d1), color-stop(#f39a90), color-stop(#f3e590), to(#b8f390)) repeat scroll 0% 0%/200% 200%;
+    background: rgba(0, 0, 0, 0) linear-gradient(90deg, #90f3b3, #90e9f3, #909ff3, #cc90f3, #f390d1, #f39a90, #f3e590, #b8f390) repeat scroll 0% 0%/200% 200%;
+}
+
+@keyframes GradientAnimation {
+    0% {
+        background-position: 0% 50%
+    }
+
+    50% {
+        background-position: 100% 50%
+    }
+
+    100% {
+        background-position: 0% 50%
+    }
+}
+/* <!--===============================================================================================--> */

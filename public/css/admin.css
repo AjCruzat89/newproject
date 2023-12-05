@@ -1,0 +1,114 @@
+body{
+    font-family: 'Roboto', sans-serif !important;
+}
+
+#sidebar{
+    width: 300px;
+    background-color: #232D3F;
+    z-index: 1000;
+    position: relative;
+}
+
+#closeButton{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: white;
+    font-size: 30px;
+}
+
+#closebutton:hover{
+    cursor: pointer;
+}
+
+@media (max-width:768px) {
+    #sidebar{
+        width: 100%;
+    }
+}
+
+#sidebar a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+#sidebar a:after{
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: '.';
+  color: transparent;
+  background: #aaa;
+  height: 1px;
+  transition: width 0.3s ease-in;
+}
+#sidebar a:hover:after {
+  width: 100%;
+}
+
+.navbar{
+    background-color: #232D3F;
+    z-index: 999;
+    color: white;
+}
+
+.navbar span{
+    font-size: 30px;
+}
+
+.navbar span:hover{
+    cursor: pointer;
+}
+
+.main{
+    margin-left: 300px;
+}
+
+@media (max-width:768px) {
+    .main{
+        margin-left: 0px;
+    }
+}
+
+#mainContent h1{
+    color: white;
+}
+
+#mainContent button{
+    display: flex;
+    align-items: center;
+}
+
+.modal-header h1{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.modal-body label{
+    font-size: 20px;
+}
+
+.modal-body input{
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+#editButtons span{
+    background-color: var(--background-color);
+    padding: 10px;
+    border-radius: 50%;
+}
+
+#editButtons span:hover{
+    filter: brightness(0.5);
+    cursor: pointer;
+}
